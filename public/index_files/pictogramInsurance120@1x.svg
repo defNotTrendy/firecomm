@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>pictogram/64/pictogramInsurance120@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DDL-CBA---Pictograms" transform="translate(-446.000000, -751.000000)"></g>
+        <g id="pictogram/64/pictogramInsurance120">
+            <rect id="Bounding-Box" x="0" y="0" width="120" height="120"></rect>
+            <g id="Insurance" transform="translate(36.000000, 36.000000)" stroke="#4F4C4D" stroke-width="2">
+                <path d="M32,44 C32,46.209 30.209,48 28,48 C25.791,48 24,46.209 24,44 L24,30" id="Handle" stroke-linecap="square"></path>
+                <path d="M24,5 C10.745,5 0,15.745 0,29 C2.95604559,29 46.2159582,29 48,29 C48,15.745 37.255,5 24,5 Z" id="Roof" fill="#FFFFFF"></path>
+                <path d="M24,4.99121094 C18.4775,4.99121094 14,15.745 14,29 C16.3202782,29 32.1206822,29 34,29 C34,15.745 29.5225,4.99121094 24,4.99121094 Z" id="Focus" fill="#FFCC00"></path>
+                <path d="M24,0 L24,4" id="Point" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

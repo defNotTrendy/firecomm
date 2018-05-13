@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>pictogram/64/pictogramPersonalLoan120@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3.67267948,23 L0.00689741904,23 C0.00231147995,22.863664 0,22.7267468 0,22.5892857 C0,16.3367432 4.78237903,11.2094647 10.8631501,10.7172619 C14.9092236,4.2765037 22.0434863,3.55271368e-15 30.1692308,3.55271368e-15 C42.7783164,3.55271368e-15 53,10.2974508 53,23 L3.67267948,23 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DDL-CBA---Pictograms" transform="translate(-153.000000, -1138.000000)"></g>
+        <g id="pictogram/64/pictogramPersonalLoan120">
+            <rect id="Bounding-Box" x="0" y="0" width="120" height="120"></rect>
+            <g id="Personal-Loans" transform="translate(59.500000, 57.500000) scale(-1, 1) translate(-59.500000, -57.500000) translate(33.000000, 44.000000)">
+                <g id="Combined-Shape">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <path stroke="#4F4D4C" stroke-width="2" d="M51.9778511,22 L51.9778506,21.9999899 C51.4590552,10.312372 41.8918988,1 30.1692308,1 C22.5951721,1 15.6877911,4.91703127 11.709929,11.249207 L11.4433454,11.6735691 L10.9438304,11.7140019 C5.54265602,12.1511953 1.30319873,16.5690734 1.01556916,22 L3.67267948,22 L51.9778511,22 Z"></path>
+                </g>
+                <g id="Group" transform="translate(7.000000, 17.000000)" stroke="#4F4D4C" stroke-width="2" fill="#FFCC00">
+                    <ellipse id="Start" cx="4.92" cy="5" rx="4.92" ry="5"></ellipse>
+                    <ellipse id="Start-Copy" cx="35.5019041" cy="5" rx="4.92" ry="5"></ellipse>
+                </g>
+                <path d="M47.9999998,12 L12,12" id="Line" stroke="#4F4D4C" stroke-width="2" stroke-linecap="square"></path>
+                <path d="M34,12 L34,2" id="Line-Copy" stroke="#4F4D4C" stroke-width="2" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>pictogram/64/pictogramHomeBuying120@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DDL-CBA---Pictograms" transform="translate(-303.000000, -968.000000)"></g>
+        <g id="pictogram/64/pictogramHomeBuying120">
+            <rect id="Bounding-Box" x="0" y="0" width="120" height="120"></rect>
+            <g id="pictogram" transform="translate(37.000000, 32.000000)" stroke-width="2" stroke="#4F4C4D">
+                <polygon id="Home" fill="#FFFFFF" points="0 17 22 0 44 17 44 47 0 47"></polygon>
+                <polygon id="Focus" fill="#FFCC00" points="35 29 26 29 26 20 35 20"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>pictogram/64/pictogramTravel120@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DDL-CBA---Pictograms" transform="translate(-153.000000, -1308.000000)"></g>
+        <g id="pictogram/64/pictogramTravel120" stroke="#4F4C4D" stroke-width="2">
+            <g id="pictogram" transform="translate(42.000000, 32.000000)">
+                <polyline id="Rectangle-7" stroke-linecap="square" points="10 5 10 0 22 0 22 5"></polyline>
+                <rect id="Rectangle-5" fill="#FFFFFF" x="0" y="7" width="32" height="44" rx="2"></rect>
+                <path d="M0,43 L32,43 L32,49 L32,49 C32,50.1045695 31.1045695,51 30,51 L2,51 L2,51 C0.8954305,51 1.3527075e-16,50.1045695 0,49 L0,43 Z" id="Focus" fill="#FFCC00"></path>
+                <path d="M9.07401796,53 L9.07401796,54" id="Line" stroke-linecap="square"></path>
+                <path d="M10,16 L10,35" id="Line-Copy-2" stroke-linecap="square"></path>
+                <path d="M23.074018,53 L23.074018,54" id="Line-Copy" stroke-linecap="square"></path>
+                <path d="M22,16 L22,35" id="Line-Copy-3" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

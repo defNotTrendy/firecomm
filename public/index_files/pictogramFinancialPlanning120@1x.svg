@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>pictogram/64/pictogramFinancialPlanning120@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DDL-CBA---Pictograms" transform="translate(-446.000000, -1138.000000)"></g>
+        <g id="pictogram/64/pictogramFinancialPlanning120">
+            <rect id="Bounding-Box" x="0" y="0" width="120" height="120"></rect>
+            <g id="pictogram" transform="translate(29.000000, 32.000000)" stroke="#4F4C4D" stroke-width="2">
+                <path d="M25.8089581,49.1662009 C32.6800178,49.1662009 37.4498715,40.2701214 37.1179925,30.2369878 C36.8553636,22.2973753 32.614281,13.9935728 24.3947445,5.3255805 C16.3808676,13.720756 12.3739292,21.9703351 12.3739292,30.0743178 C12.3739292,40.2676912 20.3724723,49.1662009 25.8089581,49.1662009 Z" id="Focus" fill="#FFCC00" transform="translate(24.754109, 27.245891) rotate(-45.000000) translate(-24.754109, -27.245891) "></path>
+                <path d="M37,44 C43.8710598,44 48.9382201,34.9981712 49,24.9472656 C49.0486654,17.0299479 45.0486654,8.71419271 37,0 C29,8.56268389 25,16.8960172 25,25 C25,35.1933733 31.5635143,44 37,44 Z" id="Oval-10" fill="#FFFFFF"></path>
+                <path d="M37,29 L37,55" id="Line-Copy" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

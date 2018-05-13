@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>pictogram/64/pictogramCards120@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DDL-CBA---Pictograms" transform="translate(-303.000000, -751.000000)"></g>
+        <g id="pictogram/64/pictogramCards120">
+            <rect id="Bounding-Box" x="0" y="0" width="120" height="120"></rect>
+            <g id="pictogram" transform="translate(33.000000, 42.000000)" stroke="#4F4C4D" stroke-width="2">
+                <rect id="card" fill="#FFFFFF" x="0" y="0" width="54" height="34" rx="3"></rect>
+                <path d="M43,-8.8817842e-16 L51,-8.8817842e-16 L51,-2.48689958e-14 C52.6568542,-2.51733549e-14 54,1.34314575 54,3 L54,31 L54,31 C54,32.6568542 52.6568542,34 51,34 L43,34 L26,17 L43,-8.8817842e-16 Z" id="focus" fill="#FFCC00"></path>
+                <polygon id="brand" stroke-linecap="square" points="10 6 14 10 10 14 6 10.0356697"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
