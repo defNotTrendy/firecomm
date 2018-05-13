@@ -1,0 +1,6 @@
+/NEW.env
+*/.env
+/.history
+*.log
+*/node_modules
+functions/node_modules
